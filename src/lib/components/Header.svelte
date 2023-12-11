@@ -1,6 +1,7 @@
 <script>
+	import { onMount, onDestroy } from 'svelte';
 	import { imagePaths } from './objects/headerImg.js';
-  import Icon from '@iconify/svelte';
+    import Icon from '@iconify/svelte';
 
 	let currentIndex = 0;
 	let fading = false;
@@ -24,20 +25,30 @@
 	}
 
 	let yOffset = 0;
+	/**
+	 * @type {{ (): void; (this: Window, ev: Event): any; (this: Window, ev: Event): any; }}
+	 */
+	let updateBackgroundPosition;
 
-	function updateBackgroundPosition() {
-		yOffset = window.scrollY * 0.1;
-	}
+	onMount(() => {
+		updateBackgroundPosition = () => {
+			yOffset = window.scrollY * 0.1;
+		};
 
-	window.addEventListener('scroll', updateBackgroundPosition);
+		window.addEventListener('scroll', updateBackgroundPosition);
+		setInterval(nextSlide, 15000);
+
+		return () => {
+			window.removeEventListener('scroll', updateBackgroundPosition);
+		};
+	});
 
 	$: backgroundImage = `url(${imagePaths[currentIndex]})`;
 	$: nextIndex = (currentIndex + 1) % imagePaths.length;
 	$: nextBackgroundImage = `url(${imagePaths[nextIndex]})`;
 	$: backgroundStyle = `background-position: center ${yOffset}px; background-size: cover;`;
-
-	setInterval(nextSlide, 15000);
 </script>
+
 
 <header class="h-screen -mx-20 -my-36 bg-no-repeat relative overflow-hidden">
 	<div class="absolute w-full h-full bg-black bg-opacity-60 z-20"></div>
