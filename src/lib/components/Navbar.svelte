@@ -30,15 +30,15 @@
 	</button>
 	<div>
 		<ul class="hidden md:flex items-center font-bold space-x-8 tracking-wider pb-4 uppercase">
-			<li class="hover:border-b drop-shadow-lg transition-all">
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
 				<a href="/reservation">Réservation</a>
 			</li>
-			<li class="hover:border-b drop-shadow-lg transition-all"><a href="/menu">Menu</a></li>
-			<li class="hover:border-b drop-shadow-lg transition-all"><a href="/gallery">Gallery</a></li>
-			<li class="hover:border-b drop-shadow-lg transition-all">
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/menu">Menu</a></li>
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/gallery">Gallery</a></li>
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
 				<a href="/promotions">Promotions</a>
 			</li>
-			<li class="hover:border-b drop-shadow-lg transition-all"><a href="/contact">Contact</a></li>
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/contact">Contact</a></li>
 		</ul>
 	</div>
 </nav>
