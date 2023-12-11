@@ -18,7 +18,7 @@
 <section
 	class="min-h-screen mb-20 text-center backdrop-blur-md rounded-md p-2"
 >
-	<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+	<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
 		{#each images as image, index}
 			<div class="h-60 w-full overflow-hidden">
 				<img
