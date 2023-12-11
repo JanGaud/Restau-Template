@@ -4,6 +4,6 @@ import '../app.pcss';
 </script>
 
 <Navbar />
-<div class="mx-20 my-24 min-h-screen">
+<div class="mx-20 my-36 min-h-screen">
 	<slot />
 </div>
