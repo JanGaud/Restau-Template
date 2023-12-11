@@ -50,7 +50,7 @@
 </script>
 
 
-<header class="h-screen -mx-20 -my-36 bg-no-repeat relative overflow-hidden">
+<header class="h-screen -mx-2 md:-mx-20 -my-36 bg-no-repeat relative overflow-hidden">
 	<div class="absolute w-full h-full bg-black bg-opacity-60 z-20"></div>
 
 	<div class="absolute w-full flex flex-col space-y-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">

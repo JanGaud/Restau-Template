@@ -1,6 +1,7 @@
 <script>
 	import Header from "$lib/components/Header.svelte";
-
+	import Socials from "$lib/components/Socials.svelte";
 </script>
+
 <Header />
-<div class="min-h-screen"></div>
+<Socials />
