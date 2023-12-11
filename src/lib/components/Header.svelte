@@ -32,7 +32,7 @@
 
 	onMount(() => {
 		updateBackgroundPosition = () => {
-			yOffset = window.scrollY * 0.1;
+			yOffset = window.scrollY * 0.2;
 		};
 
 		window.addEventListener('scroll', updateBackgroundPosition);
