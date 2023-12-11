@@ -53,7 +53,7 @@
   </div>
 
   <!-- Navigation bubbles -->
-  <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex">
+  <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex z-20">
     {#each imagePaths as path, index}
       <button
         class="cursor-pointer bg-[#ffffff] rounded-full mx-2 w-10 h-1 focus:outline-none"
