@@ -1,71 +1,79 @@
 <script>
-  import { imagePaths } from './objects/headerImg.js';
-  let currentIndex = 0;
-  let fading = false;
+	import { imagePaths } from './objects/headerImg.js';
+  import Icon from '@iconify/svelte';
 
-  function nextSlide() {
-    fading = true;
-    setTimeout(() => {
-      currentIndex = (currentIndex + 1) % imagePaths.length;
-      fading = false;
-    }, 1000);
-  }
+	let currentIndex = 0;
+	let fading = false;
 
-  /**
-   * @param {KeyboardEvent & { currentTarget: EventTarget & HTMLButtonElement; }} event
-   * @param {number} index
-   */
-  function handleKeyPress(event, index) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      currentIndex = index;
-    }
-  }
+	function nextSlide() {
+		fading = true;
+		setTimeout(() => {
+			currentIndex = (currentIndex + 1) % imagePaths.length;
+			fading = false;
+		}, 1000);
+	}
 
-  let yOffset = 0;
+	/**
+	 * @param {KeyboardEvent & { currentTarget: EventTarget & HTMLButtonElement; }} event
+	 * @param {number} index
+	 */
+	function handleKeyPress(event, index) {
+		if (event.key === 'Enter' || event.key === ' ') {
+			currentIndex = index;
+		}
+	}
 
-  function updateBackgroundPosition() {
-    yOffset = window.scrollY * 0.1;
-  }
+	let yOffset = 0;
 
-  window.addEventListener('scroll', updateBackgroundPosition);
+	function updateBackgroundPosition() {
+		yOffset = window.scrollY * 0.1;
+	}
 
-  $: backgroundImage = `url(${imagePaths[currentIndex]})`;
-  $: nextIndex = (currentIndex + 1) % imagePaths.length;
-  $: nextBackgroundImage = `url(${imagePaths[nextIndex]})`;
-  $: backgroundStyle = `background-position: center ${yOffset}px; background-size: cover;`;
-  
-  setInterval(nextSlide, 15000);
+	window.addEventListener('scroll', updateBackgroundPosition);
+
+	$: backgroundImage = `url(${imagePaths[currentIndex]})`;
+	$: nextIndex = (currentIndex + 1) % imagePaths.length;
+	$: nextBackgroundImage = `url(${imagePaths[nextIndex]})`;
+	$: backgroundStyle = `background-position: center ${yOffset}px; background-size: cover;`;
+
+	setInterval(nextSlide, 15000);
 </script>
 
-
-
 <header class="h-screen -mx-20 -my-36 bg-no-repeat relative overflow-hidden">
-  <div class="absolute w-full h-full bg-black bg-opacity-40 z-20"></div>
+	<div class="absolute w-full h-full bg-black bg-opacity-60 z-20"></div>
 
-  <!-- Current Image -->
-  <div class={`absolute w-full h-full bg-image ${fading ? 'fade-out' : 'fade-in'}`} 
-       style="background-image: {backgroundImage}; {backgroundStyle}">
-  </div>
+	<div class="absolute flex flex-col space-y-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
+		<h1 class="text-center text-main-white font-bold text-4xl md:text-7xl">Voir notre menu!</h1>
+		<div class="flex justify-center">
+			<a href="/menu" class="bg-[#dcbe5ba8] hover:bg-[#897C4A] backdrop-blur-sm py-3 px-5 rounded-full flex items-center gap-4 font-bold text-xl">Consulter <Icon icon="fluent:food-24-filled" /></a>
+		</div>
+	</div>
 
-  <!-- Next Image -->
-  <div class={`absolute w-full h-full bg-image ${fading ? 'fade-in' : 'fade-out'}`} 
-       style="background-image: {nextBackgroundImage}; {backgroundStyle}">
-  </div>
+	<!-- Current Image -->
+	<div
+		class={`absolute w-full h-full bg-image ${fading ? 'fade-out' : 'fade-in'}`}
+		style="background-image: {backgroundImage}; {backgroundStyle}"
+	></div>
 
-  <!-- Navigation bubbles -->
-  <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex z-20">
-    {#each imagePaths as path, index}
-      <button
-        class="cursor-pointer bg-[#ffffff] rounded-full mx-2 w-10 h-1 focus:outline-none"
-        class:opacity-80={index === currentIndex}
-        class:opacity-50={index !== currentIndex}
-        on:click={() => {currentIndex = index;}}
-        on:keypress={(event) => handleKeyPress(event, index)}
-        tabindex="0"
-      ></button>
-    {/each}
-  </div>
+	<!-- Next Image -->
+	<div
+		class={`absolute w-full h-full bg-image ${fading ? 'fade-in' : 'fade-out'}`}
+		style="background-image: {nextBackgroundImage}; {backgroundStyle}"
+	></div>
+
+	<!-- Navigation bubbles -->
+	<div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex z-20">
+		{#each imagePaths as path, index}
+			<button
+				class="cursor-pointer bg-[#ffffff] rounded-full mx-2 w-10 h-1 focus:outline-none"
+				class:opacity-80={index === currentIndex}
+				class:opacity-50={index !== currentIndex}
+				on:click={() => {
+					currentIndex = index;
+				}}
+				on:keypress={(event) => handleKeyPress(event, index)}
+				tabindex="0"
+			></button>
+		{/each}
+	</div>
 </header>
-
-
-
