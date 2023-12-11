@@ -3,3 +3,4 @@
 
 </script>
 <Header />
+<div class="min-h-screen"></div>
