@@ -45,8 +45,8 @@
 
 
 <!-- menu mobile -->
-<div class={`fixed inset-0 transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out md:hidden z-40 bg-gold-gradient backdrop-blur-sm`}>
-  <ul class="flex flex-col items-center justify-center font-bold space-y-8 tracking-wider h-full text-xl">
+<div class={`fixed inset-0 transform ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out md:hidden z-40 bg-gold-gradient backdrop-blur-md`}>
+  <ul class="flex flex-col items-center justify-center font-bold space-y-8 tracking-wider h-full text-3xl">
     <li class="drop-shadow-lg"><a href="/reservation">Réservation</a></li>
     <li class="drop-shadow-lg"><a href="/menu">Menu</a></li>
     <li class="drop-shadow-lg"><a href="/gallery">Gallery</a></li>
