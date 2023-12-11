@@ -18,7 +18,7 @@
 			communauté étudiante de l'ÉTS.
 		</p>
 	</div>
-	<div class="flex justify-center gap-8 flex-wrap text-gold-second">
+	<div class="flex justify-center gap-8 flex-wrap text-gold-second py-2">
 		<small class="flex items-center gap-1"
 			><Icon class="w-5 h-5" icon="simple-icons:justeat" />Resto-Pub 100 Génies</small
 		>
