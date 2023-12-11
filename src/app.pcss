@@ -1,0 +1,56 @@
+/* Write your global styles here, in PostCSS syntax */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gold-gradient {
+	background: rgb(220, 189, 91);
+	background: linear-gradient(180deg, rgba(220, 189, 91, 1) 0%, rgba(34, 34, 34, 0) 65%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Handlee', cursive;
+	color: #dcbd5b;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	color: #fffdf4;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar-track {
+	background-color: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #dcbd5b;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #897c4a;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Style the text selection color */
+::selection {
+	background: #dcbe5bbe;
+	color: #222222;
+}
+
+::-moz-selection {
+	background: #dcbe5bbe;
+	color: #222222;
+}
