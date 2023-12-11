@@ -3,7 +3,7 @@
 </script>
 
 <section
-	class="min-h-screen text-center space-y-10 flex flex-col justify-center border-2 border-main-white rounded-md p-2"
+	class="min-h-screen mb-20 text-center space-y-10 flex flex-col justify-center border-2 border-main-white rounded-md p-2"
 >
 	<h2 class="text-6xl my-2 text-main-white font-bold underline tracking-wider">À propos</h2>
 	<div class="space-y-6">

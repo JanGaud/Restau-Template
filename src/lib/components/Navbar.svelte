@@ -34,7 +34,7 @@
 				<a href="/reservation">Réservation</a>
 			</li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/menu">Menu</a></li>
-			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/gallery">Gallery</a></li>
+			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all"><a href="/Galerie">Galerie</a></li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
 				<a href="/promotions">Promotions</a>
 			</li>
@@ -49,7 +49,7 @@
   <ul class="flex flex-col items-center justify-center font-bold space-y-8 tracking-wider h-full text-3xl uppercase">
     <li class="drop-shadow-lg"><a href="/reservation">Réservation</a></li>
     <li class="drop-shadow-lg"><a href="/menu">Menu</a></li>
-    <li class="drop-shadow-lg"><a href="/gallery">Gallery</a></li>
+    <li class="drop-shadow-lg"><a href="/Galerie">Galerie</a></li>
     <li class="drop-shadow-lg"><a href="/promotions">Promotions</a></li>
     <li class="drop-shadow-lg"><a href="/contact">Contact</a></li>
   </ul>
