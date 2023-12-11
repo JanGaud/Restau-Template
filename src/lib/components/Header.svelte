@@ -49,12 +49,29 @@
 	$: backgroundStyle = `background-position: center ${yOffset}px; background-size: cover;`;
 </script>
 
+<style>
+  .glow-fx {
+    animation: glow 0.9s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.01);
+      opacity: 1;
+    }
+  }
+</style>
+
 
 <header class="h-screen -mx-2 md:-mx-20 -my-36 bg-no-repeat relative overflow-hidden">
 	<div class="absolute w-full h-full bg-black bg-opacity-60 z-20"></div>
 
 	<div class="absolute w-full flex flex-col space-y-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-		<h1 class="text-center text-[#fffdf4c0] drop-shadow-xl font-bold text-5xl md:text-8xl">Voir notre menu!</h1>
+		<h1 class="text-center text-[#fffdf4c0] drop-shadow-xl font-bold text-5xl md:text-8xl glow-fx">Voir notre menu!</h1>
 		<div class="flex justify-center">
 			<a href="/menu" class="bg-[#dcbe5ba8] shadow-lg hover:bg-[#897c4ab6] backdrop-blur-sm py-3 px-5 rounded-full flex items-center gap-4 font-bold text-xl uppercase">Consulter <Icon icon="fluent:food-24-filled" /></a>
 		</div>
