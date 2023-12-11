@@ -1,5 +1,5 @@
 <script>
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 	import { imagePaths } from './objects/headerImg.js';
     import Icon from '@iconify/svelte';
 
@@ -48,24 +48,6 @@
 	$: nextBackgroundImage = `url(${imagePaths[nextIndex]})`;
 	$: backgroundStyle = `background-position: center ${yOffset}px; background-size: cover;`;
 </script>
-
-<style>
-  .glow-fx {
-    animation: glow 0.9s infinite alternate;
-  }
-
-  @keyframes glow {
-    0% {
-      transform: scale(1);
-      opacity: 0.8;
-    }
-    100% {
-      transform: scale(1.01);
-      opacity: 1;
-    }
-  }
-</style>
-
 
 <header class="h-screen -mx-2 md:-mx-20 -my-36 bg-no-repeat relative overflow-hidden">
 	<div class="absolute w-full h-full bg-black bg-opacity-60 z-20"></div>
