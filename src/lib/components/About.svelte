@@ -7,7 +7,7 @@
 >
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold underline tracking-wider">À propos</h2>
 	<div class="space-y-6">
-		<h3 class="text-2xl text-gold font-bold tracking-wider">Notre histoire</h3>
+		<h3 class="text-xl md:text-2xl text-gold font-bold tracking-wider">Notre histoire</h3>
 		<p class="text-main-white text-lg">
 			Le Resto-pub 100 génies a été créé à l'image des étudiantes et des étudiants de l'ÉTS. Il vous
 			offre un menu varié, une sélection intéressante de bières et diverses consommations
