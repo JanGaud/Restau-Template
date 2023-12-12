@@ -62,7 +62,7 @@
 		class="flex flex-col items-center justify-center font-bold space-y-8 tracking-wider h-full text-3xl uppercase"
 	>
 		<li class="drop-shadow-lg"><a href="/#section-reservation">Réservation</a></li>
-		<li class="drop-shadow-lg"><a href="/#section-menu">Menu</a></li>
+		<li class="drop-shadow-lg"><a href="/menu">Menu</a></li>
 		<li class="drop-shadow-lg"><a href="/#section-galerie">Galerie</a></li>
 		<li class="drop-shadow-lg"><a href="/#section-promotions">Promotions</a></li>
 		<li class="drop-shadow-lg"><a href="/#section-contact">Contact</a></li>
