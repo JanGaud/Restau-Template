@@ -19,7 +19,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://www.facebook.com/100genies"
-					class="glow-fx"
+					class="hovglow-fx"
 				>
 					<Icon
 						class="w-10 h-10 md:w-12 md:h-12 hover:text-gold transition-colors"

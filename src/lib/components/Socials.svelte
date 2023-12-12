@@ -6,10 +6,10 @@
   <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/100genies" class="glow-fx">
     <Icon class="w-10 h-10 md:w-14 md:h-14 hover:text-gold transition-colors" icon="ic:baseline-facebook" />
   </a>
-  <a href="/" class="glow-fx">
+  <a href="/" class="hovglow-fx">
     <Icon class="w-10 h-10 md:w-14 md:h-14 hover:text-gold transition-colors" icon="uil:schedule" />
   </a>
-  <a href="/" class="glow-fx">
+  <a href="/" class="hovglow-fx">
     <Icon class="w-10 h-10 md:w-14 md:h-14 hover:text-gold transition-colors" icon="ic:baseline-contact-support" />
   </a>
 </div>

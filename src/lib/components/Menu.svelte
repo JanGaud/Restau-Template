@@ -27,13 +27,13 @@
 	<div class="absolute top-0 w-full flex justify-around">
 		<button on:click={() => navigate('prev')}
 			><Icon
-				class="w-10 h-10 glow-fx hover:text-gold transition-colors"
+				class="w-10 h-10 hover:text-gold transition-colors"
 				icon="icon-park-outline:left-c"
 			/></button
 		>
 		<button on:click={() => navigate('next')}
 			><Icon
-				class="w-10 h-10 glow-fx hover:text-gold transition-colors"
+				class="w-10 h-10 hover:text-gold transition-colors"
 				icon="icon-park-outline:right-c"
 			/></button
 		>
