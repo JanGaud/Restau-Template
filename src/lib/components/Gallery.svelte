@@ -15,12 +15,10 @@
 	}
 </script>
 
-<section
-	class="min-h-screen mb-20 text-center backdrop-blur-md rounded-md p-2"
->
-	<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+<section class="mb-20 text-center backdrop-blur-md rounded-md p-2">
+	<div class="flex flex-nowrap h-fit gap-4 overflow-x-scroll">
 		{#each images as image, index}
-			<div class="h-60 w-full overflow-hidden">
+			<div class="flex-none h-60 aspect-square p-2">
 				<img
 					src={image.src}
 					alt={image.alt}
@@ -30,3 +28,4 @@
 		{/each}
 	</div>
 </section>
+
