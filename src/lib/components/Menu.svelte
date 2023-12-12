@@ -23,7 +23,7 @@
 	id="section-menu"
 	class="relative min-h-screen mb-20 text-center space-y-10 border-2 border-main-white rounded-md p-2"
 >
-	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold underline tracking-wider">Menu</h2>
+	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Menu</h2>
 	<div class="absolute top-0 w-full flex justify-between px-5">
 		<button on:click={() => navigate('prev')}
 			><Icon

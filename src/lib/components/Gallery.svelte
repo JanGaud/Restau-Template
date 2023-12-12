@@ -1,9 +1,13 @@
 <script>
-	import { Gallery } from 'flowbite-svelte';
+	import Icon from '@iconify/svelte';
 	import { galleryImg } from './objects/galleryImg';
 
+	let modalVisible = false;
+	let modalImageSrc = '';
+	let modalImageAlt = '';
+
 	const images = galleryImg.map((src, index) => ({
-		alt: `Image ${index + 1}`,
+		alt: `Gallery Image ${index + 1}`,
 		src: src
 	}));
 
@@ -11,23 +15,60 @@
 	 * @param {string} src
 	 */
 	function openImage(src) {
-		throw new Error('Function not implemented.');
+		modalImageSrc = src;
+		modalVisible = true;
+		document.body.style.overflow = 'hidden';
+	}
+
+	function closeModal() {
+		modalVisible = false;
+		document.body.style.overflow = '';
+	}
+
+	/**
+	 * @param {{ key: string; }} event
+	 */
+	function handleKeydown(event) {
+		if (event.key === 'Escape') {
+			closeModal();
+		}
 	}
 </script>
 
-<section id="section-galerie" class="mb-20 text-center backdrop-blur-md rounded-md space-y-10 p-2">
-	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">
-		Galerie
-	</h2>
+<section id="section-galerie" class="mb-20 text-center space-y-10 p-2">
+	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Galerie</h2>
 	<div class="flex flex-nowrap h-fit gap-4 overflow-x-scroll">
-		{#each images as image, index}
-			<div class="flex-none h-60 aspect-square p-2">
+		{#each images as image}
+			<button
+				class="relative flex-none h-72 aspect-square p-2"
+				on:click={() => openImage(image.src)}
+			>
+				<Icon class="absolute w-8 h-8 right-3 top-3" icon="ic:outline-zoom-in" />
 				<img
 					src={image.src}
 					alt={image.alt}
-					class="h-full w-full object-cover cursor-pointer hover:opacity-50"
+					class="h-full w-full object-cover cursor-pointer opacity-80 hover:opacity-100"
 				/>
-			</div>
+			</button>
 		{/each}
 	</div>
 </section>
+
+{#if modalVisible}
+	<div
+		class="fixed inset-0 w-full h-screen bg-background backdrop-blur-lg bg-opacity-60 flex items-center justify-center z-50 overflow-hidden"
+		on:click={closeModal}
+		on:keydown={handleKeydown}
+		role="button"
+		tabindex="0"
+	>
+		<div class="relative max-w-[90%] max-h-[90%] md:max-h-[75%] md:max-w-[75%]">
+			<img class="object-contain m-0 p-0" alt={modalImageAlt} src={modalImageSrc} />
+		</div>
+		<Icon
+			class="absolute w-10 h-10 top-2 right-2 cursor-pointer"
+			icon="ic:round-close"
+			on:click={closeModal}
+		/>
+	</div>
+{/if}
