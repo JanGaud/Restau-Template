@@ -24,16 +24,16 @@
 	class="relative min-h-screen mb-20 text-center space-y-10 border-2 border-main-white rounded-md p-2"
 >
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold underline tracking-wider">Menu</h2>
-	<div class="absolute top-0 w-full flex justify-around">
+	<div class="absolute top-0 w-full flex justify-between px-5">
 		<button on:click={() => navigate('prev')}
 			><Icon
-				class="w-10 h-10 hover:text-gold transition-colors"
+				class="h-7 w-7 md:w-10 md:h-10 hover:text-gold transition-colors"
 				icon="icon-park-outline:left-c"
 			/></button
 		>
 		<button on:click={() => navigate('next')}
 			><Icon
-				class="w-10 h-10 hover:text-gold transition-colors"
+				class="h-7 w-7 md:w-10 md:h-10 hover:text-gold transition-colors"
 				icon="icon-park-outline:right-c"
 			/></button
 		>
