@@ -47,5 +47,5 @@
 			<Beers />
 		{/if}
 	</div>
-	<div class="absolute bottom-2 right-3 p-2 border rounded-full">{activePageIndex + 1}</div>
+	<div class="absolute bottom-2 right-2 p-2 rounded-full">{activePageIndex + 1}</div>
 </section>
