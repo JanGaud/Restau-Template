@@ -26,7 +26,7 @@ export const meals = [
         price: '15.50$',
         ingredients: 'Ailes de poulet',
         sauces: 'Sauce BBQ, Sauce Buffalo, Sauce Chipotle',
-    }
+    },
     {
         name: 'Salade César',
         price: '10.50$',
