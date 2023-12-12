@@ -34,19 +34,19 @@
 	<div>
 		<ul class="hidden md:flex items-center font-bold space-x-8 tracking-wider pb-4 uppercase">
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
-				<a href="#section-reservation">Réservation</a>
+				<a href="/#section-reservation">Réservation</a>
 			</li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
 				<a href="/menu">Menu</a>
 			</li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
-				<a href="#section-galerie">Galerie</a>
+				<a href="/#section-galerie">Galerie</a>
 			</li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
-				<a href="#section-promotions">Promotions</a>
+				<a href="/#section-promotions">Promotions</a>
 			</li>
 			<li class="hover:border-b hover:shadow-lg drop-shadow-lg transition-all">
-				<a href="#section-contact">Contact</a>
+				<a href="/#section-contact">Contact</a>
 			</li>
 		</ul>
 	</div>
@@ -61,10 +61,10 @@
 	<ul
 		class="flex flex-col items-center justify-center font-bold space-y-8 tracking-wider h-full text-3xl uppercase"
 	>
-		<li class="drop-shadow-lg"><a href="#section-reservation">Réservation</a></li>
-		<li class="drop-shadow-lg"><a href="#section-menu">Menu</a></li>
-		<li class="drop-shadow-lg"><a href="#section-galerie">Galerie</a></li>
-		<li class="drop-shadow-lg"><a href="#section-promotions">Promotions</a></li>
-		<li class="drop-shadow-lg"><a href="#section-contact">Contact</a></li>
+		<li class="drop-shadow-lg"><a href="/#section-reservation">Réservation</a></li>
+		<li class="drop-shadow-lg"><a href="/#section-menu">Menu</a></li>
+		<li class="drop-shadow-lg"><a href="/#section-galerie">Galerie</a></li>
+		<li class="drop-shadow-lg"><a href="/#section-promotions">Promotions</a></li>
+		<li class="drop-shadow-lg"><a href="/#section-contact">Contact</a></li>
 	</ul>
 </div>
