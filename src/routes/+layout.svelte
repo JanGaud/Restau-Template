@@ -1,5 +1,6 @@
 <script>
-	import Navbar from '$lib/components/Navbar.svelte';
+	import FooterMain from '$lib/components/FooterMain.svelte';
+import Navbar from '$lib/components/Navbar.svelte';
 import '../app.pcss';
 </script>
 
@@ -7,3 +8,5 @@ import '../app.pcss';
 <div class="mx-2 md:mx-20 my-36">
 	<slot />
 </div>
+<FooterMain />
+
