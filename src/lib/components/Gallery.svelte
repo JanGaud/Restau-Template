@@ -15,7 +15,7 @@
 	}
 </script>
 
-<section class="mb-20 text-center backdrop-blur-md rounded-md p-2">
+<section class="mb-20 text-center backdrop-blur-md rounded-md space-y-10 p-2">
 		<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold underline tracking-wider">Galerie</h2>
 	<div class="flex flex-nowrap h-fit gap-4 overflow-x-scroll">
 		{#each images as image, index}
