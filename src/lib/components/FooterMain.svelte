@@ -27,17 +27,6 @@
 					/>
 				</a>
 			</li>
-			<li>
-				<a
-					href="tel:+15143968887"
-					class="glow-fx flex items-center gap-1 hover:text-gold transition-colors"
-				>
-					<Icon
-						class="w-10 h-10 md:w-12 md:h-12"
-						icon="ic:outline-phone"
-					/>(514) 396-8887
-				</a>
-			</li>
 		</ul>
 	</div>
 </footer>
