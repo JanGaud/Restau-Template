@@ -13,7 +13,7 @@
 </script>
 
 <nav
-	class="h-32 w-full fixed top-0 px-4 pt-4 bg-gold-gradient backdrop-blur-sm md:backdrop-blur-0 z-50 flex items-center justify-center md:justify-between drop-shadow-lg"
+	class="h-32 w-full fixed top-0 px-4 pt-4 bg-gold-gradient rounded-b-xl backdrop-blur-sm md:backdrop-blur-0 z-50 flex items-center justify-center md:justify-between drop-shadow-lg"
 >
 	<div class="h-full">
 		<a href="/"
