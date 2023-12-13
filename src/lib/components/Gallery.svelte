@@ -35,7 +35,7 @@
 	}
 </script>
 
-<section id="section-galerie" class="mb-20 text-center space-y-10 p-2">
+<section id="section-galerie" class="mb-20 text-center space-y-10 flex flex-col justify-center p-2 h-screen">
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Galerie</h2>
 	<div class="flex flex-nowrap h-fit gap-4 overflow-x-scroll">
 		{#each images as image}
@@ -62,8 +62,8 @@
 		role="button"
 		tabindex="0"
 	>
-		<div class="relative max-w-[90%] max-h-[90%] md:max-h-[75%] md:max-w-[75%]">
-			<img class="object-contain m-0 p-0" alt={modalImageAlt} src={modalImageSrc} />
+		<div class="relative flex items-center max-w-[90%] max-h-[90%] md:max-h-[75%] md:max-w-[75%]">
+			<img class="object-contain w-full m-0 p-0" alt={modalImageAlt} src={modalImageSrc} />
 		</div>
 		<Icon
 			class="absolute w-10 h-10 top-2 right-2 cursor-pointer"
