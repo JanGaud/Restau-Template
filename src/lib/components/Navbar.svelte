@@ -21,7 +21,7 @@
 </script>
 
 <nav
-	class="h-32 w-full fixed top-0 px-4 pt-4 bg-gold-gradient backdrop-blur-sm z-50 flex items-center justify-center md:justify-between drop-shadow-lg"
+	class="h-28 w-full fixed top-0 px-4 pt-4 bg-gold-gradient backdrop-blur-sm z-50 flex items-center justify-center md:justify-between drop-shadow-lg"
 >
 	<div class="h-full">
 		<a href="/"
