@@ -1,7 +1,6 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import { galleryImg } from './objects/galleryImg';
-
 	let modalVisible = false;
 	let modalImageSrc = '';
 	let modalImageAlt = '';
@@ -35,12 +34,12 @@
 	}
 </script>
 
-<section id="section-galerie" class="mb-20 text-center space-y-10 flex flex-col justify-center p-2 h-screen">
+<section id="section-galerie" class="mb-20 text-center space-y-10 flex flex-col justify-center p-2 md:h-screen">
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Galerie</h2>
-	<div class="flex flex-nowrap h-fit gap-4 overflow-x-scroll">
+	<div class="flex flex-nowrap h-fit gap-4 overflow-x-auto snap-x snap-mandatory">
 		{#each images as image}
 			<button
-				class="relative flex-none h-72 aspect-square p-2"
+				class="relative flex-none h-72 aspect-square p-2 snap-center"
 				on:click={() => openImage(image.src)}
 			>
 				<Icon class="absolute w-8 h-8 right-3 top-3" icon="ic:outline-zoom-in" />
@@ -53,6 +52,7 @@
 		{/each}
 	</div>
 </section>
+
 
 {#if modalVisible}
 	<div
