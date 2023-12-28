@@ -2,7 +2,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<footer class="w-full h-40 border-t-2 border-gold">
+<footer class="w-full h-40 border-t-2 border-gold backdrop-blur-lg">
 	<div class="h-24 p-2 flex justify-around">
 		<a href="/"
 			><img

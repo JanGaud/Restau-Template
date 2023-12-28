@@ -21,7 +21,7 @@
 
 <section
 	id="section-menu"
-	class="relative min-h-screen mb-20 text-center space-y-10 border-2 border-main-white rounded-md p-2"
+	class="relative min-h-screen mb-20 text-center space-y-10 border-2 border-main-white bg-background rounded-md p-2 shadow-lg"
 >
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Menu</h2>
 	<div class="absolute top-0 w-full flex justify-between px-5">
