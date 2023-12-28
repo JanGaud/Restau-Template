@@ -36,7 +36,7 @@
 
 <section id="section-galerie" class="mb-20 text-center space-y-10 flex flex-col justify-center p-2 md:h-screen">
 	<h2 class="text-4xl md:text-6xl my-2 text-main-white font-bold tracking-wider">Galerie</h2>
-	<div class="backdrop-blur-lg flex flex-nowrap h-fit gap-4 overflow-x-auto snap-x snap-mandatory">
+	<div class="backdrop-blur-lg shadow-inner flex flex-nowrap h-fit gap-4 overflow-x-auto snap-x snap-mandatory">
 		{#each images as image}
 			<button
 				class="relative flex-none h-72 aspect-square p-2 snap-center"
