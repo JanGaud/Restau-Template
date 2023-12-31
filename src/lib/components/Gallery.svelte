@@ -39,7 +39,7 @@
 	<div class="backdrop-blur-lg shadow-inner flex flex-nowrap h-fit gap-4 overflow-x-auto snap-x snap-mandatory">
 		{#each images as image}
 			<button
-				class="relative flex-none h-72 aspect-square p-2 snap-center"
+				class="relative flex-none h-72 lg:h-80 aspect-square p-2 snap-center"
 				on:click={() => openImage(image.src)}
 			>
 				<Icon class="absolute w-8 h-8 right-3 top-3" icon="ic:outline-zoom-in" />
