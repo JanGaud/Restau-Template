@@ -1,5 +1,5 @@
 <script>
-	import { beer } from '../objects/menuObj/beers.js';
+	import { beer } from '../objects/menuObj/beers/beers.js';
 </script>
 
 <div class="h-full">

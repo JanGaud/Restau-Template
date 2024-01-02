@@ -1,5 +1,5 @@
 <script>
-	import { appetizers } from '../objects/menuObj/appetizers.js';
+	import { appetizers } from '../objects/menuObj/appetizers/appetizers.js';
 </script>
 
 <div class="h-full">
